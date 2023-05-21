@@ -1,7 +1,9 @@
 
 const Home = () => {
   return (
-    <div>Home Page</div>
+    <header style={{ marginTop: '3.6rem' }}>
+      <p>borrar header</p>
+    </header>
   )
 }
 
