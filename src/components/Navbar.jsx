@@ -25,10 +25,6 @@ const navArrayLinks = [
     path: '/booking'
   },
   {
-    title: 'Doctors',
-    path: '/doctors'
-  },
-  {
     title: 'Contact',
     path: '/contact'
   }
@@ -69,8 +65,8 @@ function DrawerAppBar (props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar variant='pain' component='nav' sx={{ color: '#212529', backgroundColor: '#f8f9fb' }}>
-        <Toolbar sx={{ display: 'flex' }}>
+      <AppBar position='relative' variant='pain' component='nav' sx={{ color: '#212529', backgroundColor: '#f8f9fb' }}>
+        <Toolbar sx={{ display: 'flex', height: '10vh' }}>
           <IconButton
             color='inherit'
             aria-label='open drawer'
@@ -80,6 +76,7 @@ function DrawerAppBar (props) {
           >
             <BiMenu />
           </IconButton>
+          <Typography component={Link} to='/' sx={{ textDecoration: 'none', display: { xs: 'flex', sm: 'none' }, justifySelf: 'end', alignSelf: 'center', position: 'absolute', right: '1.4rem', fontWeight: 400, color: '#495057' }} variant='button'>Smile Sense</Typography>
           <Box
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent: 'start', alignItems: 'center', gap: '.4rem', textDecoration: 'none', color: '#212529' }}
             component={Link}

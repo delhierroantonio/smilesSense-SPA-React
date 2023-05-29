@@ -1,0 +1,10 @@
+.main {
+  height: 100vh;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  background-color: #ffffff;
+}
+
+.section {
+  scroll-snap-align: start;
+}
