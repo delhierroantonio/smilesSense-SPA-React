@@ -10,8 +10,6 @@ import chiefDoctor from '../assets/images/chiefDoctor.png'
 import DoctorCard from '../components/DoctorCard'
 import { RxDotFilled } from 'react-icons/rx'
 
-import '../pages/home.css'
-
 // hero image styles
 const heroImage = {
   height: '100vh',
